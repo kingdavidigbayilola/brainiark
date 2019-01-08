@@ -4,7 +4,8 @@
   "description": "A web application interface",
   "main": "index.js",
   "scripts": {
-    "start": "node ./bin/server.js"
+    "start": "node ./bin/server.js",
+    "deploy": "now && now alias"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",

@@ -1,6 +1,10 @@
 {
-    "name": "brainiark",
+    "name": "Brainiark",
     "version": 1,
-    "dotenv": ".env",
-    "alias": "brainiark.now.sh"
+    "alias": [
+        "brainiark.com"
+    ],
+    "env": {
+        "NODE_ENV": "production"
+    }
 }
