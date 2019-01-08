@@ -1,0 +1,27 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+#about h1{
+    color:#5fcf80;
+}
+
+#about h4{
+    font-size:1.4rem;
+    font-weight:400;
+}
+
+#brainiarkabout h2{
+    color:#5fcf80;
+}
+
+#brainiarkabout p{
+  line-height:1.5;
+  font-size:larger;
+}
+
+#creator h2{
+    color:#5fcf80;
+}

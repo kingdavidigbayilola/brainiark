@@ -1,0 +1,42 @@
+{
+  "name": "brainiark",
+  "version": "1.0.0",
+  "description": "A web application interface",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "cloudinary": "^1.13.2",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^2.0.3",
+    "cookie-session": "^2.0.0-beta.3",
+    "dotenv": "^6.2.0",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "mongoose": "^5.4.1",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "serve-favicon": "^2.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kingdavidigbayilola/brainiark.git"
+  },
+  "keywords": [
+    "express"
+  ],
+  "author": "Kingdavid Igbayilola",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kingdavidigbayilola/brainiark/issues"
+  },
+  "homepage": "https://github.com/kingdavidigbayilola/brainiark#readme"
+}

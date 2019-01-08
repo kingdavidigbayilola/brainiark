@@ -1,0 +1,80 @@
+  @import url('https://fonts.googleapis.com/css?family=Bungee');
+  @import url('https://fonts.googleapis.com/css?family=Righteous');
+
+  header {
+      background-image:url('/images/background_signin.jpg');
+      background-size: cover;
+      background-position: center;
+      min-height: 600px;
+  }
+
+  .section {
+      padding-top: 4vw;
+      padding-bottom: 4vw;
+  }
+
+  nav ul a:hover {
+      background: none;
+  }
+
+  .nav-link {
+      color: #424242;
+      font-family: 'Righteous', cursive;
+  }
+
+  .nav-s {
+      color: #5fcf80;
+      font-family: 'Righteous', cursive;
+  }
+
+  .nav-menu {
+      color: #424242;
+  }
+
+  .logo-edit {
+      color: #424242;
+      font-family: 'Bungee', cursive;
+      text-transform: uppercase;
+  }
+
+  .login-main {
+      margin-top: 100px;
+  }
+
+  .login-container {
+      border-radius: 10px;
+      width: 60%;
+      margin: auto;
+      padding: 10px;
+  }
+
+  .footer-text {
+      color: #424242;
+  }
+
+  .contact {
+      border-right: 0.5px solid #424242;
+  }
+
+  .footer-link {
+      padding-right: 5px;
+      color: #5fcf80;
+      font-family: 'Righteous', cursive;
+  }
+
+  @media (min-width: 320px) and (max-width: 767.98px) {
+      header {
+          min-height: 500px;
+      }
+
+      .login-container {
+          border-radius: 0px;
+          width: 100%;
+          margin: 0;
+          padding: 0px;
+      }
+
+      .login-main {
+          margin-top: 50px;
+      }
+  }

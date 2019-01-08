@@ -1,0 +1,6 @@
+{
+    "name": "brainiark",
+    "version": 1,
+    "dotenv": ".env",
+    "alias": "brainiark.now.sh"
+}

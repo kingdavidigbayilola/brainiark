@@ -1,0 +1,160 @@
+ @import url('https://fonts.googleapis.com/css?family=Bungee');
+ @import url('https://fonts.googleapis.com/css?family=Righteous');
+
+ #prallax_section {
+     background-image: url('https://res.cloudinary.com/dbkxx33pu/image/upload/v1545248706/samples/bike.jpg');
+     background-size: cover;
+     background-repeat:no-repeat;
+     background-position: center;
+     min-height:800px;
+     padding:20px;
+     position: relative;
+     opacity:0.8;
+     background-attachment:fixed;
+ }
+
+ .section {
+     padding-top: 4vw;
+     padding-bottom: 4vw;
+ }
+
+ nav ul a:hover {
+     background: none;
+ }
+
+ .nav-link {
+     color: #424242;
+     font-family: 'Righteous', cursive;
+ }
+
+ .nav-s {
+     color: #5fcf80;
+     font-family: 'Righteous', cursive;
+ }
+
+ .nav-menu {
+     color: #424242;
+ }
+
+ .logo-edit {
+     color: #424242;
+     font-family: 'Bungee', cursive;
+     text-transform: uppercase;
+ }
+
+ .tabs .indicator {
+     background-color: #1a237e;
+ }
+
+ .tabs .tab a:focus,
+ .tabs .tab a:focus.active {
+     background: transparent;
+ }
+
+ .nav-wrapper .container .brand-logo {
+     font-size: 1.5rem;
+ }
+
+ hr {
+     border: 0;
+     height: 1px;
+     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+ }
+
+ .footer-text {
+     color: #424242;
+ }
+
+ .contact {
+     border-right: 0.5px solid #424242;
+ }
+
+ .footer-link {
+     padding-right: 5px;
+     color: #5fcf80;
+     font-family: 'Righteous', cursive;
+ }
+
+section .section-container{
+    width:95%;
+    margin:auto;
+}
+
+#practice{
+    margin-top:50px;
+}
+
+.practice-box {
+    background: #eee;
+    border-radius: 5px;
+    margin:5px;
+}
+
+.practice-box-title {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px;
+    color: #fff;
+}
+
+.practice-box-content {
+    padding: 10px;
+}
+
+.practice-link {
+    margin-top: 15px;
+}
+
+/* .section-questions{
+    width:80%;
+    margin:auto;
+    background:#eee;
+} */
+
+.box{
+    margin:30px;
+    padding:30px
+
+}
+
+.box h3{
+    text-align:center;
+    color:#fff;
+    font-weight: bolder;
+    font-size:4rem;
+}
+
+.box .small-box{
+    text-align:center;
+    margin:20px;
+    padding:8px;
+    color:#fff;
+    font-size:1.8rem;
+}
+
+ @media (min-width: 320px) and (max-width: 767.98px) {
+      #prallax_section {
+          position: relative;
+          background-attachment:scroll;
+          min-height:400px;
+      }
+      .box {
+          margin:0;
+          padding:0;
+      }
+
+      .box h3 {
+          text-align:initial;
+          color: #fff;
+          font-weight:0px;
+          font-size:0;
+      }
+
+      .box .small-box {
+          text-align:initial;
+          margin:0;
+          padding:0;
+          color: #fff;
+          font-size:0;
+      }
+ }

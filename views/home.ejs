@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+  crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="/stylesheets/static.css">
+  <link rel="stylesheet" href="/stylesheets/footer.css">
+<link rel="stylesheet" href="/stylesheets/alert.css">
+  <title>Brainiark</title>
+</head>
+<body id="home" class="scrollspy">
+  <header>
+    <% include partials/home-nav %>
+  </header>
+
+  <section id="prallax_section">
+    <div class="box">
+      <h3>That Horizon Might Be Closer Than You Think It Time For You To Get There First</h3>
+      <div class="small-box">
+        <p>We'll help you get there by managing your time and resources better everyday.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="row">
+      <div class="col s12 l6">
+        <h4>Valuable</h4>
+        <p>
+          We have a wide range of plans to fit your goals and budget. Check out a free trial to see what works for you and then
+          pay monthly—you’ll never have to shell out thousands up front like some bootcamps or traditional colleges.
+        </p>
+      </div>
+      <div class="col s12 l6">
+        <h4>Flexible</h4>
+        <p>
+          Learning a new skill doesn’t have to interrupt your busy schedule. Our on-demand videos and interactive code challenges
+          are there for you when you need them.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!--parallx container-->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img class="responsive-img" alt="prallax container" src="https://res.cloudinary.com/dbkxx33pu/image/upload/v1546373473/samples/e.jpg">
+    </div>
+  </div>
+
+    <section class="container section scrollspy" id="services">
+      <div class="row">
+        <div class="col s12 l4">
+          <h2 class="indigo-text darken-4">What I Do ....</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique ullam illo doloremque repellendus facilis voluptate architecto odio repudiandae, cupiditate pariatur vitae, qui fuga. Architecto libero ipsum quidem. Eius, perferendis nostrum!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores assumenda eveniet voluptatibus soluta illum eligendi, tempore fugit libero repudiandae fuga quos aliquid repellat voluptate accusantium praesentium dolore aliquam magni voluptates!</p>
+        </div>
+        
+        <div class="col s12 l6 offset-l2">
+          <ul class="tabs indicator">
+              <li class="tab col s6">
+                <a href="#photography" class="indigo-text text-darken-4">Photography</a>
+              </li>
+              <li class="tab col s6">
+                <a href="#editing" class="indigo-text text-darken-4">Editing</a>
+              </li>
+          </ul>
+
+          <div class="col s12" id="photography">
+            <p class="flow-text indigo-text text-darken-4">PHOTOGRAPHY</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos eius doloribus inventore? Nesciunt delectus modi quo vitae voluptatum quia esse, sapiente libero magnam repudiandae! Libero repudiandae provident aliquid veniam aperiam?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos eius doloribus inventore? Nesciunt delectus modi quo vitae voluptatum quia esse, sapiente libero magnam repudiandae! Libero repudiandae provident aliquid veniam aperiam?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos eius doloribus inventore? Nesciunt delectus modi quo vitae voluptatum quia esse, sapiente libero magnam repudiandae! Libero repudiandae provident aliquid veniam aperiam?</p>
+          </div>
+          <div class="col s12" id="editing">
+              <p class="flow-text indigo-text text-darken-4">EDITING</p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos eius doloribus inventore? Nesciunt delectus modi quo vitae voluptatum quia esse, sapiente libero magnam repudiandae! Libero repudiandae provident aliquid veniam aperiam?</p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos eius doloribus inventore? Nesciunt delectus modi quo vitae voluptatum quia esse, sapiente libero magnam repudiandae! Libero repudiandae provident aliquid veniam aperiam?</p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos eius doloribus inventore? Nesciunt delectus modi quo vitae voluptatum quia esse, sapiente libero magnam repudiandae! Libero repudiandae provident aliquid veniam aperiam?</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+  <!--parallx container-->
+   <div class="parallax-container">
+      <div class="parallax">
+        <img class="responsive-img" alt="prallax container" src="/images/home/background_parallax_2.jpg">
+      </div>
+  </div>
+
+  <!--Form-->
+  <section class="container section scrollspy" id="signup">
+    <div class="row">
+        <div class="col s12 l5">
+          <h3 class="">Sign up</h3>
+          <span style="color:#424242;">
+            And get the most out of brainiark an get access to unlimited worldwide questions, in your fingerprint
+            <p>&#10004; Access To Unlimited Questions<br>&#10004; Unlimited Answers<br>&#10004; Access To Corrections </p>
+          </span>
+        </div>
+        <div class="col s12 l5 offset-l2">
+          <form action="/signup" method="POST">
+            <% if(message.length > 0){ %>
+              <div id="signinMessage">
+                <span><%= message %></span>
+              </div>
+            <%} %>
+            <div class="row">
+                  <div class="col s6 l6">
+                    <div class="input-field">
+                      <i class="fas fa-user prefix"></i>
+                      <input type="text" id="firstname" name="firstname" maxlength="12">
+                      <label for="firstname">First Name</label>
+                    </div>
+                  </div>
+                  <div class="col s6 l6">
+                    <div class="input-field">
+                      <input type="text" id="lastname" name="lastname" maxlength="12">
+                      <label for="lastname">Last Name</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12 l12">
+                    <div class="input-field">
+                      <i class="material-icons prefix">email</i>
+                      <input type="email" id="email" name="email" class="validate">
+                      <label for="email">Email</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                      <i class="fas fa-lock prefix"></i>
+                      <input id="password" type="password" name="password" class="validate" minlength="1" maxlength="14">
+                      <label for="password">Password</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12 l12">
+                    <div class="input-field right hide-on-med-and-down">
+                      <button class="btn waves-effect waves-light" type="submit" style="background:#5fcf80;">Submit
+                        <i class="material-icons right">send</i>
+                      </button>
+                    </div>
+                    
+                    <div class="input-field hide-on-large-only show-on-small">
+                      <button class="btn waves-effect waves-light" type="submit" style="background:#5fcf80;">Submit
+                        <i class="material-icons right">send</i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+          </form>
+        </div>
+    </div>
+  </section>
+  <footer class="page-footer">
+    <% include partials/footer %>
+  </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<script src="/javascripts/signin.js"></script>
+<script src="/javascripts/quote.js"></script>
+<script src="/js/footer.js"></script>
+<script>
+      $(document).ready(function () {
+          $('.tabs').tabs();
+          $('.tooltipped').tooltip();
+          $('.sidenav').sidenav();
+          $('.parallax').parallax();
+          $('.materialboxed').materialbox();
+          $('.scrollspy').scrollSpy();
+          $('.tabs').tabs();
+        });
+</script>
+</body>
+</html>
+
