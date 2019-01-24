@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Aleo');
+
 *{
     padding:0;
     margin:0;
     box-sizing:border-box;
+}
+
+.creator{
+    height:160px;
+    width: 160px;
+    border-radius: 50%;
 }
 
 #about h1{
@@ -25,3 +33,11 @@
 #creator h2{
     color:#5fcf80;
 }
+
+h1,
+h2,
+h4{
+    font-family: 'Aleo',
+    serif;
+}
+

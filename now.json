@@ -5,6 +5,13 @@
         "brainiark.com"
     ],
     "env": {
-        "NODE_ENV": "production"
-    }
+    "SESSION_SECRET": "@my-session-key",
+    "MLAB_AD": "@my-mlab-user-key",
+    "MLAB_PW": "@my-mlab-password-key",
+    "CLOUD_NAME": "@my-cloud-name-key",
+    "API_ID": "@my-api-id-key",
+    "API_SECRET": "@my-api-secret-key",
+    "VALUE": "@my-value-key",
+    "GMAILPW": "@my-gmail-password-key"
+  }
 }

@@ -1,68 +1,23 @@
-/* .footer-lg {
-    font-size:5rem;
-    padding:1px;
+.logo-edit{
+    color:#424242;
 }
 
-.code-i{
-    font-size:1.5rem;
+#footer-main{
+    padding:50px;
 }
 
-.footer-setup > div a{
-    padding-right:5px;
+#footer-row{
+    margin-bottom:0px;
 }
 
-.footer-text {
-     color: #424242;
- }
-
- .contact {
-     border-right: 0.5px solid #424242;
- }
-
- .footer-link {
-     padding-right: 5px;
-     color: #5fcf80;
-     font-family: 'Righteous', cursive;
- }
-
- .greeting-card {
-     margin-top: 20rem;
-     padding-top: 5px;
-     padding-bottom: 5px;
- }
- .page-footer{
-     background:#263238;
-     color:#fff;
- }
-
- .footer-container {
-    width:80%;
-    margin:auto;
- }
-.icon-link-footer{
-    font-size:2rem;
+footer{
+    margin-top:80px;
 }
 
- @media (min-width: 320px) and (max-width: 767.98px){
-    .footer-lg {
-        font-size:3rem;
-        padding:0px;
-    }
-    .code-i {
-        font-size: 1rem;
-    }
- } */
-
- .page-footer {
-     background: #fff;
-     color: #000;
+ .social > li{
+     display:inline;
  }
 
- .footer-copyright {
-     background: #fff;
- }
-
- footer{
-     border-top:0.2px solid #bdbdbd;
-     margin-top:50px;
+ .social li{
+    margin-right:20px;
  }

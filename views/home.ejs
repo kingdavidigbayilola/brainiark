@@ -13,98 +13,110 @@
   <link rel="stylesheet" href="/stylesheets/static.css">
   <link rel="stylesheet" href="/stylesheets/footer.css">
 <link rel="stylesheet" href="/stylesheets/alert.css">
-  <title>Brainiark</title>
+<link rel="stylesheet" href="/stylesheets/reset.css">
+  <title>Start Practing at Brainiark For Free</title>
 </head>
 <body id="home" class="scrollspy">
   <header>
-    <% include partials/home-nav %>
+    <div class="navbar-fixed" style="margin:0px;padding:0px">
+      <nav class="white">
+        <div class="nav-wrapper container">
+          <a href="/" class="brand-logo logo-edit" style="color:#424242" title="Brainiark Homepage">Brainiark</a>
+          <a href="#" class="sidenav-trigger" data-target="mobile-nav"><i class="material-icons" style="color:#424242;">
+              menu</i></a>
+          <!--Desktop Navigation-->
+          <ul class="right hide-on-med-and-down">
+            <li><a href="/" class="nav-link">Home</a></li>
+            <li><a href="/practice" class="nav-link">Practice</a></li>
+            <li><a href="/about" class="nav-link">About</a></li>
+            <li><a href="/signin" class="nav-s">Sign in</a></li>
+            <li><a href="/#signup" class="nav-s">Sign Up</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!--Mobile Navigation-->
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="/" class="nav-link">Home</a></li>
+      <li><a href="/practice" class="nav-link">Practice</a></li>
+      <li><a href="/about" class="nav-link">About</a></li>
+      <li><a href="/signin" class="nav-s">Sign in</a></li>
+      <li><a href="/#signup" class="nav-s">Sign Up</a></li>
+    </ul>
   </header>
 
   <section id="prallax_section">
     <div class="box">
-      <h3>That Horizon Might Be Closer Than You Think It Time For You To Get There First</h3>
-      <div class="small-box">
-        <p>We'll help you get there by managing your time and resources better everyday.</p>
-      </div>
+      <h4>That Horizon Might Be Closer Than You Think It Time For You To Get There First</h4>
     </div>
   </section>
 
-  <section class="section">
+  <section id="section_features">
     <div class="row">
-      <div class="col s12 l6">
-        <h4>Valuable</h4>
-        <p>
-          We have a wide range of plans to fit your goals and budget. Check out a free trial to see what works for you and then
-          pay monthly—you’ll never have to shell out thousands up front like some bootcamps or traditional colleges.
-        </p>
-      </div>
-      <div class="col s12 l6">
-        <h4>Flexible</h4>
-        <p>
-          Learning a new skill doesn’t have to interrupt your busy schedule. Our on-demand videos and interactive code challenges
-          are there for you when you need them.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!--parallx container-->
-  <div class="parallax-container">
-    <div class="parallax">
-      <img class="responsive-img" alt="prallax container" src="https://res.cloudinary.com/dbkxx33pu/image/upload/v1546373473/samples/e.jpg">
-    </div>
-  </div>
-
-    <section class="container section scrollspy" id="services">
-      <div class="row">
-        <div class="col s12 l4">
-          <h2 class="indigo-text darken-4">What I Do ....</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique ullam illo doloremque repellendus facilis voluptate architecto odio repudiandae, cupiditate pariatur vitae, qui fuga. Architecto libero ipsum quidem. Eius, perferendis nostrum!</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores assumenda eveniet voluptatibus soluta illum eligendi, tempore fugit libero repudiandae fuga quos aliquid repellat voluptate accusantium praesentium dolore aliquam magni voluptates!</p>
-        </div>
-        
-        <div class="col s12 l6 offset-l2">
-          <ul class="tabs indicator">
-              <li class="tab col s6">
-                <a href="#photography" class="indigo-text text-darken-4">Photography</a>
-              </li>
-              <li class="tab col s6">
-                <a href="#editing" class="indigo-text text-darken-4">Editing</a>
-              </li>
-          </ul>
-
-          <div class="col s12" id="photography">
-            <p class="flow-text indigo-text text-darken-4">PHOTOGRAPHY</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos eius doloribus inventore? Nesciunt delectus modi quo vitae voluptatum quia esse, sapiente libero magnam repudiandae! Libero repudiandae provident aliquid veniam aperiam?</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos eius doloribus inventore? Nesciunt delectus modi quo vitae voluptatum quia esse, sapiente libero magnam repudiandae! Libero repudiandae provident aliquid veniam aperiam?</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos eius doloribus inventore? Nesciunt delectus modi quo vitae voluptatum quia esse, sapiente libero magnam repudiandae! Libero repudiandae provident aliquid veniam aperiam?</p>
+      <div class="col s12 m7 l3">
+        <div class="card">
+          <div class="card-image">
+          <img src="images/Home/bored.jpg">
           </div>
-          <div class="col s12" id="editing">
-              <p class="flow-text indigo-text text-darken-4">EDITING</p>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos eius doloribus inventore? Nesciunt delectus modi quo vitae voluptatum quia esse, sapiente libero magnam repudiandae! Libero repudiandae provident aliquid veniam aperiam?</p>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos eius doloribus inventore? Nesciunt delectus modi quo vitae voluptatum quia esse, sapiente libero magnam repudiandae! Libero repudiandae provident aliquid veniam aperiam?</p>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos eius doloribus inventore? Nesciunt delectus modi quo vitae voluptatum quia esse, sapiente libero magnam repudiandae! Libero repudiandae provident aliquid veniam aperiam?</p>
-            </div>
+          <div class="card-content">
+            <p>When reading for a test or exams sometimes students get border preparing for it that is where Brainiark comes in line to remove the
+              boredom of preparing for you examination 
+            </p>
+          </div>
+          <div class="card-links">
+            <a class="waves-effect waves-light btn" href="/practice">practice</a>
+          </div>
         </div>
       </div>
-    </section>
-
-  <!--parallx container-->
-   <div class="parallax-container">
-      <div class="parallax">
-        <img class="responsive-img" alt="prallax container" src="/images/home/background_parallax_2.jpg">
+      <div class="col s12 m7 l3">
+        <div class="card">
+          <div class="card-image">
+          <img src="images/Home/gathering.jpg">
+          </div>
+          <div class="card-content">
+            <p>Gather around with freinds and family to experience the intresting questions and answers Brainiark has in store for you and others
+               to get you set for examination with real time stimulation.</p>
+          </div>
+           <div class="card-links">
+            <a class="waves-effect waves-light btn" href="/about">about</a>
+          </div>
+        </div>
       </div>
-  </div>
-
+      <div class="col s12 m7 l3">
+        <div class="card">
+          <div class="card-image">
+          <img src="images/Home/reading.jpg">
+          </div>
+          <div class="card-content">
+            <p>But it doesn't mean you should not still pick up a book to read but with brainiark is quite fun to try it out, reading is a good thing and some of Brainiark
+              questions will still need you to access your books for more <b>understanding</b>.
+            </p>
+          </div>
+           <div class="card-links">
+            <a class="waves-effect waves-light btn" href="privacy">privacy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!--Form-->
-  <section class="container section scrollspy" id="signup">
+  <section class="signup-cont section scrollspy" id="signup">
     <div class="row">
-        <div class="col s12 l5">
-          <h3 class="">Sign up</h3>
-          <span style="color:#424242;">
-            And get the most out of brainiark an get access to unlimited worldwide questions, in your fingerprint
-            <p>&#10004; Access To Unlimited Questions<br>&#10004; Unlimited Answers<br>&#10004; Access To Corrections </p>
-          </span>
+        <div class="col s12 l5 info-signup">
+          <div class="color-signup">
+              <h3>SIGN UP</h3>
+          </div>
+          <ul>
+            <li class="signup-design"><span><% include partials/checkmark %></span> Well performed library</li>
+            <li class="signup-design"><span><% include partials/checkmark %></span> The Best Student Experience</li>
+            <li class="signup-design"><span><% include partials/checkmark %></span> Access To Failed Questions</li>
+          <ul>
+          <!-- <div class="signup-learn-more"><button>Learn More</button></div> -->
+          <div class="signup-learn-more">
+            <a href="/about">
+            <button>Learn More</button>
+            </a>
+          </div>
         </div>
         <div class="col s12 l5 offset-l2">
           <form action="/signup" method="POST">
@@ -146,16 +158,17 @@
                 </div>
                 <div class="row">
                   <div class="col s12 l12">
+                    <!-- for desktop -->
                     <div class="input-field right hide-on-med-and-down">
-                      <button class="btn waves-effect waves-light" type="submit" style="background:#5fcf80;">Submit
-                        <i class="material-icons right">send</i>
-                      </button>
+                      <div class="submit-design">
+                          <button type="submit" >Submit</button>
+                      </div>
                     </div>
-                    
+                    <!-- for mobile -->
                     <div class="input-field hide-on-large-only show-on-small">
-                      <button class="btn waves-effect waves-light" type="submit" style="background:#5fcf80;">Submit
-                        <i class="material-icons right">send</i>
-                      </button>
+                      <div class="submit-design">
+                        <button type="submit">Submit</button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -163,14 +176,13 @@
         </div>
     </div>
   </section>
-  <footer class="page-footer">
+  <footer>
     <% include partials/footer %>
   </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 <script src="/javascripts/signin.js"></script>
-<script src="/javascripts/quote.js"></script>
 <script src="/js/footer.js"></script>
 <script>
       $(document).ready(function () {

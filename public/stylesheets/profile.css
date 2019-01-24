@@ -150,6 +150,10 @@
         margin-bottom: 280px;
     }
 
+    footer a{
+        color:black;
+    }
+
     @media (min-width: 320px) and (max-width: 767.98px) {
          .section {
              width: 80%;

@@ -1,27 +1,3 @@
-/*
-My BluePrint
-*
-*
-*
-*
-new Question("English ?", ["PHP", "Python", "Javascript", "All"], "do this well", "All"),
-*
-*
-*
-*
-*/
-
-
-
-
-/*
-C
-D
-A
-B
-B
-*/
-
 function call(question, options, info, answer){
     return new Question(question, options, info, answer);
 }
@@ -33,19 +9,6 @@ function randomIndexes(){
 function totalQuestion(){
     return questions.length;
 }
-
-var correction = [
-"inordinate meanse excessive",
-"conservative in this means not too high neither low",
-"winsome means showing pleasancy or attractiveness",
-"timid means not showing courage",
-"recalcitrant means unwilling or unyielding",
-"painstakingly means with great effort",
-"plebeian means to be uncultured or uneducated",
-"chubby means showing a kind of fatness that pepole do find attractive",
-"'No sooner had' in the context means immediate",
-"loath means unwillingness"
-];
 var info = [
     "choose The nearest meaning to the words or phrase in italics",
     "Choose the word or group of words that best completes each of the following sentences",
@@ -60,8 +23,6 @@ var answer = [
     "In the event of his leaving the country his family would join him","The painting was a good deceptive replica","The president gave rather long speech on the importance of patriotism",
     "The gradual fall in gold price is making the industry unstable","Publishing formulated untruths is misused press freedom","The guests arrived at the last minute","Benjamin thinks that Napoleon always says the right thing",
     "amicable","demolish","distressed","imaginery","incompetence","declining","disdain","voluntary","barbaric","affulence",
-
-
 ];
 
 var questions = [

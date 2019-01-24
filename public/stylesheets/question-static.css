@@ -1,5 +1,8 @@
-.question-design {
-    height: 37rem;
+ html{
+    line-height: 1.2;
+ }
+ .question-design {
+    /* height:26rem; */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -10,60 +13,73 @@
     border-top-right-radius: 10px;
 }
 
-.question-design #question {
-    padding-top: 20px;
-    padding-left: 60px;
+#question-holder{
+    margin: 10px 0px 10px 10px;
+    font-size:20px;
 }
-
-#question-holder {
-    margin-top: 50px;
-}
-
  .section-questions {
      width: 90%;
      margin: auto;
-     margin-top: 60px;
+     margin-top: 15px;
  }
 
   .question-information {
-      position: absolute;
-      top: 60%;
+      margin-top:20rem;
+      padding:10px;
+      text-align:center;
   }
-/* 
-  .result-cont{
-      margin-top:70px;
-  } */
 
-  /* #result-cont{
-      width:95%;
-      margin-left:50px;
-  } */
   .result{
       background:#fff;
       position:relative;
       padding:20px;
   }
-  /* .button-holder{
-      padding:10px;
-      margin:auto;
-      padding-left:20rem;
-  } */
+  .button-holders{
+      width:90%;
+      margin:20px auto;
+      margin-left:10rem;
+  }
 
+  .button-holders button{
+     border: none;
+     width: 100%;
+     padding:10px 5px;
+     font-weight:lighter;
+     background: #C62828;
+     color: #fff;
+     cursor: pointer;
+     text-transform:capitalize;
+     display:block;
+  }
 
-@media (min-width: 320px) and (max-width: 767.98px) {
+@media (min-width:768px) and (max-width:967px) {
+
+}
+@media (min-width:250px) and (max-width: 767.98px) {
     .question-design{
         height: 25rem;
+    }
+    #question-holder{
+        font-size:16px;
     }
     .question-design #question{
         padding:20px;
     }
     .question-information {
-        position: absolute;
-        top: 75%;
+       margin-top:7rem;
+       padding:0px;
+       text-align:unset;
     }
-     /* .button-holder {
-         padding: 10px;
-         margin: auto;
-         padding-left:3rem;
-     } */
+     .row .col {
+         padding:0px;
+     }
+    .button-holders button{
+        margin-bottom:3px;
+    }
+    .button-holders{
+      width:100%;
+      margin:auto;
+      margin-left:0;
+      margin-top:15px;
+  }
 }

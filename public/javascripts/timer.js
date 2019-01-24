@@ -1,6 +1,6 @@
 (function(window, document) {
      var mille = 60 * 10; //600
-     var min = parseInt(mille / 60); // 600 / 60 = 10 minutes;
+     var min = parseInt(mille / 10); // 600 / 60 = 60 minutes;
      var sec = parseInt(mille % 60); // 0 seconds;
 
      function checkTime() {
@@ -9,7 +9,7 @@
              quizFinished()
          } else {
              mille = mille - 1;
-             min = parseInt(mille / 60);
+             min = parseInt(mille / 10);
              sec = parseInt(mille % 60);
              setTimeout(function () {
                  checkTime();

@@ -6,17 +6,19 @@ var flash = require('connect-flash');
 var session = require('cookie-session');
 var passport = require('passport');
 var bodyParser = require('body-parser');
+var sess = require('./config/session');
 
 require('./config/passport');
-require('dotenv').config();
-
-mongoose.connect(`mongodb://${process.env.MLAB_AD}:${process.env.MLAB_PW}@ds018258.mlab.com:18258/brainiark`, () => console.log("connected to mongoose"));
-mongoose.Promise = global.Promise;
+require('now-env');
 
 var appRoutes = require('./routes/index');
 var practiceRoutes = require('./routes/practice');
 var accountRoutes = require('./routes/account');
 var trackRoutes = require('./routes/track');
+
+
+mongoose.connect(`mongodb://${process.env.MLAB_AD}:${process.env.MLAB_PW}@ds060977.mlab.com:60977/brainiark`);
+mongoose.Promise = global.Promise;
 
 var app = express();
 
@@ -29,10 +31,7 @@ app.use(bodyParser.urlencoded({
 app.use(favicon('favicon.ico'));
 app.use(bodyParser.json());
 app.use(flash());
-app.use(session({
-    maxAge: 24 * 60 * 60 * 1000,
-    keys: ['hhabraberlghaer'],
-}));
+app.use(session(sess));
 app.use(passport.initialize());
 app.use(passport.session());
 
@@ -42,6 +41,19 @@ app.use('/practice', practiceRoutes);
 app.use('/account', accountRoutes);
 app.use('/track', trackRoutes);
 
+app.get('env') === 'production' ? (app.set('trust proxy', 1), sess.secure = true) : {}
 
+app.use((req, res, next) => {
+    var err = new Error('Not Found');
+    err.status = 404;
+    next(err);
+});
+
+app.use((err, req, res, next) => {
+    res.render('error', {
+       status: err.status,
+       message: err.message
+    });
+})
 
 module.exports = app;

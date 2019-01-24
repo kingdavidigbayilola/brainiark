@@ -8,27 +8,28 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
-    crossorigin="anonymous">
+        crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="/stylesheets/signin.css">
     <link rel="stylesheet" href="/stylesheets/footer.css">
     <link rel="stylesheet" href="/stylesheets/alert.css">
     <title>Brainiark | Sign in</title>
 </head>
-<body>
+
+<body id="main">
     <header id="signinHeader">
-        <div class="navbar-fixed">
-            <nav class="white">
+        <div class="navbar">
+            <nav class="transparent">
                 <div class="nav-wrapper container">
 
-                    <a href="/" class="brand-logo logo-edit" style="color:#424242" title="Brainiark Homepage">Brainiark</a>
+                    <a href="/" class="brand-logo logo-edit"  title="Brainiark Homepage">Brainiark</a>
 
                     <a href="#" class="sidenav-trigger" data-target="mobile-nav"><i class="material-icons" style="color:#424242;">
                             menu</i></a>
                     <!--Desktop Navigation-->
                     <ul class="right hide-on-med-and-down">
                         <li><a href="/" class="nav-link">Home</a></li>
-                        <li><a href="/track" class="nav-link">Tracks</a></li>
+                        <li><a href="/practice" class="nav-link">Practice</a></li>
                         <li><a href="/#signup" class="nav-s">Sign up </a></li>
                     </ul>
                 </div>
@@ -36,18 +37,24 @@
         </div>
         <!--Mobile Navigation-->
         <ul class="sidenav" id="mobile-nav">
-             <li><a href="/" class="nav-link">Home</a></li>
-            <li><a href="/track" class="nav-link">Tracks</a></li>
+            <li><a href="/" class="nav-link">Home</a></li>
+            <li><a href="/practice" class="nav-link">Practice</a></li>
             <li><a href="/#signup" class="nav-s">Sign up </a></li>
         </ul>
-        
+    </header>
+
+    <section id="signin-section">
         <div class="container login-main ">
-            <div class="login-container white">
+            <div>
+                <img src="/images/Tmp/avater.svg" class="svg-icon responsive-img">
+            </div>
+            <div class="login-container">
                 <form action="/signin" method="POST">
                     <% if(message.length > 0){ %>
-                        <div id="signinMessage">
-                            <span> <%= message  %></span>
-                        </div>
+                    <div id="signinMessage">
+                        <span>
+                            <%= message  %></span>
+                    </div>
                     <%} %>
                     <div class="row">
                         <div class="col s12 l12">
@@ -67,41 +74,38 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="row">
-                        <div class="col s5 l6 left">
-                            <div class="input-field">
-                                <button class="btn waves-effect waves-light" type="submit" style="background:#5fcf80;">Sign in
-                                    <i class="material-icons right">send</i>
-                                </button>
-                            </div>
+                    <div class="lower-btns">
+                        <div class="signin-btn">
+                            <button type="submit">sign in</button>
                         </div>
-                        <div class="col s5 offset-s2 l6">
-                            <div class="input-field">
-                                <a href="/reset" class="nav-s">Forgot Password ?</a>
-                            </div>
-                        </div>
+            
                     </div>
                 </form>
+                <div class="reset-btn">
+                    <a href="/forgot">
+                        <button type="button"  disabled>Forgot Password</button>
+                    </a>
+                </div>
             </div>
         </div>
-    </header>
-    
-    <footer class="page-footer">
+        </section>
+
+    <footer>
         <% include partials/footer %>
     </footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script src="/js/footer.js"></script>
     <script src="/javascripts/signin.js"></script>
     <script>
-            $(document).ready(function () {
-                    $('.sidenav').sidenav();
-                    $('.parallax').parallax();
-                    $('.materialboxed').materialbox();
-                    $('.scrollspy').scrollSpy();
-                    $('.tabs').tabs();
-                });
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+            $('.parallax').parallax();
+            $('.materialboxed').materialbox();
+            $('.scrollspy').scrollSpy();
+            $('.tabs').tabs();
+        });
     </script>
 </body>
+
 </html>

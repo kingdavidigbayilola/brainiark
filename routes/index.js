@@ -1,5 +1,8 @@
 var express = require('express');
 var passport = require('passport');
+var async = require('async');
+var crypto = require('crypto');
+var nodemailer = require('nodemailer');
 var User = require('../models/user');
 var middleware = require('../middleware/secure');
 var {
@@ -48,10 +51,18 @@ router.get('/signout', pages_security, (req, res) => {
     res.redirect('/');
 });
 
+router.get('/forgot', (req, res) => {
+    res.render('forgot');
+});
+
 router.get('/library', pages_security, (req, res) => {
     res.render('profile/library', {
         user: req.user
     });
+});
+
+router.get('/privacy', (req, res) => {
+    res.render('privacy')
 })
 
 router.get('/user', (req, res) => {
@@ -63,7 +74,5 @@ router.get('/user', (req, res) => {
             res.json(err);
         })
 });
-
-
 
 module.exports = router;

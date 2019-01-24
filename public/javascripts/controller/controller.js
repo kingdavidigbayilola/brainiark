@@ -13,7 +13,7 @@ function display() {
              buttonOptions.innerHTML = options[i];
             getIndex(`butt-${i}`, options[i]);
         }
-
+        console.log( quiz.questions.length)
     }
 }
 

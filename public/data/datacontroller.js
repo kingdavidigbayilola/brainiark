@@ -50,7 +50,7 @@ Quiz.prototype.currentQuestion = function () {
 
 Quiz.prototype.calculateEvaluate = function (point) {
     if (this.currentQuestion().correctAnswer(point)) {
-        this.point++
+        this.point +=5
     }
     this.questionIndex++
 }
